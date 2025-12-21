@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrFixx - Expert Refrigerator Repair in New Town, Rajarhat & Kolkata</title>
+    <meta name="description" content="Fast, reliable doorstep refrigerator repair in Rajarhat, New Town, Salt Lake, and surrounding areas. Call MrFixx at 8250791200 for same-day service.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0056b3',
+                            dark: '#0f172a',
+                            light: '#f1f5f9',
+                            accent: '#f59e0b', // Amber for urgency
+                            whatsapp: '#25D366'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Animations */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 2s infinite;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50 pb-20 md:pb-0">
+
+    <!-- Top Bar (Desktop Only) -->
+    <div class="hidden md:flex bg-brand-dark text-white py-2 px-4 justify-between items-center text-sm">
+        <div><i class="fas fa-map-marker-alt mr-2 text-brand-accent"></i> Serving New Town, Rajarhat, Salt Lake & Surroundings</div>
+        <div class="font-semibold"><i class="fas fa-clock mr-2 text-brand-accent"></i> Open 7 Days: 8 AM - 9 PM</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-brand-blue text-white p-2 rounded-lg group-hover:bg-blue-700 transition">
+                    <i class="fas fa-wrench text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold text-brand-blue tracking-tight">MrFixx</span>
+                    <span class="block text-xs font-semibold text-gray-500 -mt-1">Refrigerator Experts</span>
+                </div>
+            </a>
+
+            <!-- Desktop Action Buttons -->
+            <div class="hidden md:flex gap-4 items-center">
+                <a href="https://wa.me/918250791200?text=Hi%20MrFixx,%20I%20need%20help%20with%20my%20refrigerator." target="_blank" class="flex items-center gap-2 text-gray-600 hover:text-green-600 font-medium transition">
+                    <i class="fab fa-whatsapp text-2xl text-green-500"></i> WhatsApp Us
+                </a>
+                <a href="tel:8250791200" class="bg-brand-accent hover:bg-amber-600 text-white font-bold py-2.5 px-6 rounded-full shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> 8250791200
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 shadow-xl absolute w-full z-50">
+            <a href="#services" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Services</a>
+            <a href="#locations" class="block py-3 text-gray-700 font-medium border-b border-gray-100">Service Areas</a>
+            <a href="#contact" class="block py-3 text-brand-blue font-bold">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center md:text-left">
+            <div class="max-w-2xl">
+                <span class="inline-block bg-brand-accent text-brand-dark px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 animate-bounce">
+                    <i class="fas fa-bolt mr-1"></i> Same Day Service
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Fridge Not Cooling? <br>
+                    <span class="text-blue-400">We Fix It Fast.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                    Expert refrigerator repair at your doorstep in <strong class="text-white">Rajarhat, New Town, Salt Lake</strong> & nearby areas. Reliable technicians, transparent pricing, and instant support.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="tel:8250791200" class="bg-brand-accent hover:bg-amber-600 text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg transition flex items-center justify-center gap-3">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/918250791200?text=Hi%20MrFixx,%20I%20need%20urgent%20refrigerator%20repair." target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg transition flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                
+                <p class="mt-6 text-sm text-gray-300">
+                    <i class="fas fa-check-circle text-green-400 mr-1"></i> No Hidden Charges 
+                    <span class="mx-2">|</span> 
+                    <i class="fas fa-check-circle text-green-400 mr-1"></i> 60 Min Response
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats -->
+    <section class="bg-white py-8 shadow-sm -mt-8 relative z-10 container mx-auto rounded-lg hidden md:block">
+        <div class="grid grid-cols-4 divide-x divide-gray-100">
+            <div class="text-center px-4">
+                <div class="text-3xl font-bold text-brand-blue">5000+</div>
+                <div class="text-sm text-gray-500">Happy Customers</div>
+            </div>
+            <div class="text-center px-4">
+                <div class="text-3xl font-bold text-brand-blue">10+</div>
+                <div class="text-sm text-gray-500">Years Experience</div>
+            </div>
+            <div class="text-center px-4">
+                <div class="text-3xl font-bold text-brand-blue">60m</div>
+                <div class="text-sm text-gray-500">Avg. Arrival Time</div>
+            </div>
+            <div class="text-center px-4">
+                <div class="text-3xl font-bold text-brand-blue">90 Days</div>
+                <div class="text-sm text-gray-500">Service Warranty</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems Section -->
+    <section id="services" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">What We Fix</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We handle all major brands (Samsung, LG, Whirlpool, Godrej, Haier, etc.) and all types of issues.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-brand-blue">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-temperature-low text-2xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center sm:text-left">Not Cooling</h3>
+                    <p class="text-gray-600 text-sm text-center sm:text-left">Fridge light is on but cooling is gone? We fix thermostat and airflow issues instantly.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-brand-accent">
+                    <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-wind text-2xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center sm:text-left">Gas Refilling</h3>
+                    <p class="text-gray-600 text-sm text-center sm:text-left">Professional gas charging and leakage detection to restore freezing capacity.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-brand-blue">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-cogs text-2xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center sm:text-left">Compressor Issues</h3>
+                    <p class="text-gray-600 text-sm text-center sm:text-left">Making loud noises or not starting? We repair or replace compressors efficiently.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-brand-accent">
+                    <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4 mx-auto sm:mx-0">
+                        <i class="fas fa-tint text-2xl text-brand-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center sm:text-left">Water Leakage</h3>
+                    <p class="text-gray-600 text-sm text-center sm:text-left">Fixing blocked drains and door seal issues to stop water pooling on your floor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section (Crucial for Local SEO & Trust) -->
+    <section id="locations" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Serving Your Neighborhood</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We are a local team based in Rajarhat/New Town. This allows us to reach you within minutes, not hours. We cover:
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Rajarhat</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">New Town</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Baguiati</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Chinar Park</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Kestopur</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Salt Lake (Bidhannagar)</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Lake Town</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Dum Dum</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Kaikhali</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Teghoria</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Hatiara</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Ghuni</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Raghunathpur</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Narayanpur</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Dash Drone</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Arjunpur</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-semibold border border-gray-200">Beraberi</span>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-blue-50 border-l-4 border-brand-blue rounded-r">
+                        <p class="text-brand-blue font-semibold">
+                            <i class="fas fa-info-circle mr-2"></i> 
+                            Don't see your area listed but live nearby? Call us, we likely serve you too!
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative h-80 rounded-xl overflow-hidden shadow-2xl">
+                    <!-- Placeholder for Map/Area Image -->
+                    <img src="https://images.unsplash.com/photo-1574971253073-4b684260212f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Repair Technician Map" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <p class="font-bold text-xl">Local Technicians Ready</p>
+                            <p class="text-sm opacity-90">Our vans are patrolling your area right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-brand-dark mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative">
+                    <div class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 relative z-10">1</div>
+                    <h3 class="text-xl font-bold mb-2">Book Instantly</h3>
+                    <p class="text-gray-600">Call 8250791200 or WhatsApp us your location and problem.</p>
+                </div>
+                <div class="relative">
+                    <!-- Connector Line for Desktop -->
+                    <div class="hidden md:block absolute top-8 left-[-50%] w-full h-1 bg-gray-200 -z-0"></div>
+                    <div class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 relative z-10">2</div>
+                    <h3 class="text-xl font-bold mb-2">Doorstep Diagnosis</h3>
+                    <p class="text-gray-600">Our expert arrives, checks the fridge, and gives you a quote.</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-8 left-[-50%] w-full h-1 bg-gray-200 -z-0"></div>
+                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 relative z-10"><i class="fas fa-check"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Fixed & Chilled</h3>
+                    <p class="text-gray-600">We repair it on the spot. You enjoy a working fridge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-brand-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Why Kolkata Trusts MrFixx?</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <strong class="block text-lg">Background Verified Technicians</strong>
+                                <span class="text-gray-400 text-sm">Safe, professional, and experienced staff.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <strong class="block text-lg">90-Day Warranty</strong>
+                                <span class="text-gray-400 text-sm">If the same issue reoccurs, we fix it for free.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <strong class="block text-lg">Affordable Pricing</strong>
+                                <span class="text-gray-400 text-sm">Inspection charges are waived if you take the service.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Get Quick Help</h3>
+                    <p class="text-center text-gray-600 mb-6">Don't let your food spoil. Contact us now.</p>
+                    <div class="space-y-4">
+                        <a href="tel:8250791200" class="block w-full text-center bg-brand-accent hover:bg-amber-600 text-white font-bold py-4 rounded-lg text-xl transition">
+                            <i class="fas fa-phone-alt mr-2"></i> Call 8250791200
+                        </a>
+                        <a href="https://wa.me/918250791200?text=Hi%20MrFixx,%20I%20have%20an%20enquiry." class="block w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg text-xl transition">
+                            <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-400 py-10 pb-28 md:pb-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">MrFixx</h4>
+                <p class="text-sm">Premium refrigerator repair service ensuring your appliances run smoothly. Trusted by thousands in Kolkata.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">Contact</h4>
+                <p class="mb-2"><i class="fas fa-phone mr-2"></i> <a href="tel:8250791200" class="hover:text-white">8250791200</a></p>
+                <p><i class="fab fa-whatsapp mr-2"></i> <a href="https://wa.me/918250791200" class="hover:text-white">8250791200</a></p>
+            </div>
+            <div>
+                <h4 class="text-white text-xl font-bold mb-4">Service Hours</h4>
+                <p class="mb-2">Mon - Sun: 8:00 AM - 9:00 PM</p>
+                <p class="text-brand-accent text-sm">Emergency services available.</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-xs">
+            &copy; <span id="year"></span> MrFixx Refrigerator Repair Service. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 flex md:hidden bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <a href="tel:8250791200" class="flex-1 bg-brand-blue hover:bg-blue-700 text-white py-4 flex flex-col items-center justify-center border-r border-blue-600">
+            <i class="fas fa-phone-alt text-xl mb-1"></i>
+            <span class="text-xs font-bold uppercase">Call Now</span>
+        </a>
+        <a href="https://wa.me/918250791200?text=Hi%20MrFixx,%20I%20need%20a%20technician." class="flex-1 bg-brand-whatsapp hover:bg-green-600 text-white py-4 flex flex-col items-center justify-center relative overflow-hidden">
+            <!-- Pulse animation effect -->
+            <div class="absolute inset-0 bg-white opacity-10 animate-pulse"></div>
+            <i class="fab fa-whatsapp text-2xl mb-1"></i>
+            <span class="text-xs font-bold uppercase">WhatsApp</span>
+        </a>
+    </div>
+
+    <script>
+        // Update Copyright Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
